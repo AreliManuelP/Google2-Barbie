@@ -1,0 +1,418 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+}
+/*  */
+
+body{
+/* Margen determinado de las paginas */
+    margin: 0;
+    /* marguen para dentro */
+    padding: 0;
+    /* tamaño de fuente */
+    font-size: 12px;
+    /* fuente de texto */
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#img{
+    width: 30px;
+    /* margen superior */
+    margin-top: 17px; 
+    /* margen de la derecha */
+    margin-right: 15px; 
+}
+
+
+
+/* ********************************************* */
+/* ******************************************* */
+/* ************NAVEGACION*************** */
+
+header{
+    /* background-color: #af74e6; */
+    /* ancho */
+    width: 100%;
+    /* altura */
+    height: 90px;
+}
+
+header nav{
+    display: flex;
+    /* poner el texto en el final hacia la derecha */
+    justify-content: flex-end;
+}
+
+/* solo se editan elemntos no todo */
+header nav .nav-right-section{
+    /* Eliminar viñetas */
+    /* background-color: aqua; */
+    list-style: none;
+    width: 250px;
+    /* para acomodarlo como yo quiera acomodar hacemo el elemento flexible */
+    display: flex;
+    /* centramos */
+    /* justify-content: center; */
+    justify-content: space-between;
+    /* centado vertical */
+    align-items: center;
+    height: auto;
+}
+
+nav .nav-right-section a{
+    /* QUITAR DELINEADO //LINEA */
+    text-decoration: none;
+    /* COLOR DE TEXTO */
+    color: rgba(0, 0, 0, .87);
+}
+
+nav .nav-right-section .menu{
+    /* background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png); */
+    width: 20px;
+    height: 20px;
+    /* TAMAÑO DE IMAGEN DE FONDO-- CONTENIDO -- DICIENDO QUE SE QUEDE AHI */
+    background-size: contain;
+    /* POR SI SE REPITE LO ANTERIOR LA IMAGEN  POR SI ACASO*/
+    /* background-repeat: no-repeat; */
+    margin-top: 10px;
+    /* se fue para ariiba en icono de menu */
+    margin-bottom: 25px;
+}
+
+
+/* que se ponga la linea al pasar el mause  */
+nav .nav-right-section a:hover{
+        text-decoration: underline;
+}
+
+#img:hover,
+#img2:hover {
+    /* (inset) y otra sombra externa. La primera sombra (inset 0 0 5px rgba(0, 0, 0, 0.5)) crea un sombreado dentro del elemento, mientras que la segunda sombra (0 0 5px rgba(0, 0, 0, 0.5)) crea un sombreado externo alrededor del elemento.  */
+     box-shadow: inset 0 0 1000px rgba(200, 200, 200, 0.5), 0 0 7px rgba(0, 0, 0, 0.5);
+}
+
+/* IAMGEN */
+nav .nav-right-section img{
+    /* para marguin(margen) derecho y hacer espacio a la foto */
+    margin-right: 20px;
+    width: 20px;
+    /* circular la foto */
+    /* max-width: 100%; */
+    border-radius: 100%;
+    /* margin-bottom: 1px; */
+    margin-top: 10px;
+}
+
+/* ********************************************* */
+/* ******************************************* */
+/* ************submenu*************** */
+/* quitar linea de los textos de abajo en el submenu */
+header a{
+    /* QUITAR DELINEADO //LINEA */
+    text-decoration: none;
+    /* COLOR DE TEXTO */
+    color: rgba(0, 0, 0, .87);
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu {
+    display: inline-block;
+    margin: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    
+}
+
+.menu img {
+    width: 24px;
+    height: 24px;
+    text-decoration: none;
+    
+}
+
+.submenu {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    position: fixed;
+    top: 80px; /* Adjust this value to move the submenu down */
+    right: 20px;
+}
+
+.submenu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.submenu-item img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.submenu-item span {
+    font-size: 12px;
+    color: #555;
+    display: block;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+/* ********************************************* */
+/* ******************************************* */
+/* ************MAIN*************** */
+
+main{
+    /* margin superior */
+    margin-top: 200px;
+    /* background-color: aqua; */
+    /* centar elementos */
+    text-align: center;
+}
+main .main-logo{
+/* background-color: bisque; */
+width: 500px;
+/* PROPIEDAD: VALOR1(SEPARADOS POR UN ESPACIO)VALOR2 */
+/* PROPIEDAD: VERTICAL HORIZONTAL */
+/* CENTRAR MI ELEMENTO */
+margin: 0 auto;
+/* Top  - right - botoom- left*/
+/* margin:2px 1em 0 auto */
+margin-bottom: 40px;
+}
+
+main .main-logo img{
+    /* editor tamaño de la imagen  */
+    height: 140px;
+}
+/* ********************************************* */
+/* ******************************************* */
+/* ************2do MAIN*************** */
+
+/* INPUT SECTION */
+main .main-input{
+    /* background-color: aqua; */
+    /* anchura */
+    width: 500px;
+    /* CENTAR MI ELEMNETO */
+    margin: 0 auto;
+    /* AGREGAR MARGEN INFERIOR */
+}
+
+main .main-input-container{
+    /* background-color: blue; */
+    width: 500px;
+    /* BORDER DE COLOR; ANCHURA DE LINEA, ESTILO, COLOR */
+    border: 1px solid #dfe1e5 ;
+    /* redondear */
+    border-radius: 30px;
+}
+
+main .main-input input{
+    height: 45px;
+    border: none;
+    outline: none;
+    width: 400px;
+}
+
+main .main-input .search-icon{
+    /* background-image: url(https://seekicon.com/free-icon-download/search_20.svg); */
+
+    background-image: url('../imagenes/lupa.png');
+    background-size: contain;
+    background-position: center;
+    padding-left: 6%;
+    /* PARA QUE NO SE REPITA EL ICONO */
+    background-repeat: no-repeat;
+    /* TAMAÑO */
+    width: 30px;
+    height: 30px;
+    /* separar la lupa de caja */
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+
+main .main-input .micro-icon{
+    background-image: url('../imagenes/microfono.png');
+     /* background-size: contain; */
+     width: 25px;  /* Aumenta el ancho del icono */
+     height: 25px;  /* Aumenta la altura del icono */
+    /* que aparesca el microfono*/
+    /* background-size: contain; */
+
+    /* para que permita que se haga mas grande */
+    background-size: cover;
+    /*  */
+    background-position: center;
+    padding-left: 10px;
+    /* hizo que se separara un poco entre medio de microfono y camara ya que se 
+    pone margen en microfono en el derecho*/
+    margin-right: 5px;
+    /*  */
+    /* PARA QUE NO SE REPITA EL ICONO */
+    background-repeat: no-repeat;
+    /* margin-right: 5px; */
+}
+
+main .main-input .cam-icon{
+    /* background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg); */
+    background-image: url('../imagenes/camara.png');
+     width: 25px;
+     height: 25px;
+     background-size: contain;
+     background-position: center;
+     padding-left: 6%;
+     background-repeat: no-repeat;
+     margin-right: 10px;
+    }
+     
+    /* sobra de caja */
+    main .main-input-container:hover{
+        /* 1valor lado dercho lado de camara y microfono, 
+        2do lado de abajo,
+        3er todo pero leve,
+        4to todo mas extenso*/
+        box-shadow: 0px 0px 5px 0px #20212447;
+        border-color: #dfe1e500;
+    }
+/* ********************************************* */
+/* ******************************************* */
+    /* MAIN BUTTONS SECTION */
+
+    main .main-buttons{
+        /* background-color: aqua; */
+        /* Anchura */
+        width: 550px;
+        /* centar cosas*/
+        /*vertical~horizontal  */ 
+        margin: 0 auto;
+    }
+
+    main .main-buttons div{
+        /* Alinear elemntos en la misma linea */
+        display: inline;
+        /* background-color: black;
+        height: 100px; */
+    }
+
+    main .main-buttons button{
+        /* SEPARACION ENTRE BUSCADOR Y BOTONES */
+        margin-top: 30px;
+        /* ELIMINAR BORDE NEGRO-- PUEDE SER CON none or 0px*/
+        border:none;
+        /* altura hacer caja mas grande */
+        height: 40px;
+        /*color caja  */
+        background-color: hsl(318, 72%, 69%);
+        /* color de texto */
+        color:#3c4043 ;
+        /* hacer borde redondeado */
+        border-radius: 5px;
+        /*  el 2do es hacia los lados */
+        padding: 0 15px;
+        font-size: 14px;
+        margin-right: 10px;
+    }
+    main .main-buttons button:hover{
+        color: #202124;
+        /* border + oscuro al pasar mause */
+        border: 1px solid #dadce0;
+        /* SOMBRA AL PASAR EL MOUSE*/
+        box-shadow: o 1px 1px rgba(0,0,0,.1);
+    }
+    
+/* ********************************************* */
+/* ******************************************* */
+    /* FOOTER */
+    /* background-color: #f2f2f2; */
+    
+    footer {
+        background-color: #fd91d9;
+        color: #3c4043;
+        font-size: 15px;
+        font-family: Arial, sans-serif;
+        padding: 10px 0; /* Added padding for spacing */
+    }
+    
+    .linea-separadora {
+        border-top: 1px solid #eb55b9;
+        margin: 10px 0; /* Ajuste del margen vertical */
+    }
+    
+    .seccion-abajo {
+        display: flex;
+        justify-content: space-between; /* Espacio entre las secciones */
+        align-items: center; /* Alinear elementos verticalmente al centro */
+        padding: 0 30px; /* Se agregó relleno para el espaciado izquierdo y derecho. */
+    }
+    
+    .footer-left,
+    .footer-right {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+    
+    .footer-left li,
+    .footer-right li {
+        margin-left: 20px; /* Añade un espacio entre los elementos */
+    }
+    
+    .footer-left a,
+    .footer-right a {
+        color: #3c4043;
+        text-decoration: none;
+    }
+    
+    .footer-left a:hover,
+    .footer-right a:hover {
+        text-decoration: underline;
+    }
+    
+    .seccion-arriba {
+        text-align: start; /* Alinea el texto hacia la derecha */
+    }
+    
+    .seccion-arriba p {
+        padding-left: 30px; /* Agrega espacio entre el párrafo y el borde inferior */
+    }
+    

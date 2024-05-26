@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Clone</title>
+    <!-- CONEXION A CCS -->
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- icono  -->
+    <link rel="icon" href="/imagenes/barbigoo.jpg">
+</head>
+<body>
+    <!-- ENCABEZADO -->
+    <!-- Contiene elementos de encabezado o navegacion -->
+    <header>
+        <!-- puede haber ms elementos en el header -->
+        <!-- nav- aportar la navegacion de la pagina -->
+        <nav>
+            <!-- listas no rdedadas -->
+        <ul class="nav-right-section">
+            <li>
+                <a href="https://mail.google.com/mail/?tab=rm&authuser=0&ogbl" class="tex">Gmail</a>
+            </li>
+            <li>
+                <a href="https://www.google.com/imghp?hl=es-419&tab=ri&authuser=0&ogbl" >Imágenes</a>
+            </li>
+            <li class="menu"> 
+                <a href="">
+                    <img  id="img2" src="/imagenes/menu.png" alt="">
+                    </a>
+               
+            </li>
+        </ul>
+            <!-- Submenu en este  -->
+            <div id="submenu" class="submenu hidden">
+                <div class="submenu-item">
+                    <a href="https://myaccount.google.com/?utm_source=OGB&utm_medium=app" target="_blank">
+                    <img src="imagenes/img1.png" alt="Cuenta">
+                    <span>Cuenta</span>
+                </div>
+            </a>
+            <a href="http://127.0.0.1:5505/" >
+                <div class="submenu-item">
+                    <img src="imagenes/google.png" alt="Búsqueda">
+                    <span>Búsqueda</span>
+                </div>
+            </a>
+            <a href="https://www.google.com/maps?authuser=0" target="_blank">
+                <div class="submenu-item">
+                    <img src="imagenes/ubicacion.png" alt="Maps">
+                    <span>Maps</span>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/" target="_blank">
+                <div class="submenu-item">
+                    <img src="imagenes/youtube.png" alt="YouTube">
+                    <span>YouTube</span>
+                </div>
+            </a>
+            <a href="https://play.google.com/store/games?device=windows" target="_blank">
+                <div class="submenu-item">
+                    <img src="imagenes/google-play.png" alt="Play">
+                    <span>Play</span>
+                </div>
+            </a>
+            <a href="https://news.google.com/home?hl=es-419&gl=MX&ceid=MX:es-419" target="_blank">
+                <div class="submenu-item">
+                    <img src="imagenes/periodico.png" alt="Noticias">
+                    <span>Noticias</span>
+                </div>
+            </a>
+            <a href="https://mail.google.com/mail/u/0/" target="_blank">
+                <div class="submenu-item">
+                    <img src="imagenes/gmail.png" alt="Gmail">
+                    <span>Gmail</span>
+                </div>
+            </a>
+            <a href="https://meet.google.com/?hs=197&authuser=0" target="_blank">
+                <div class="submenu-item">
+                    <img src="imagenes/meet.png" alt="Meet">
+                    <span>Meet</span>
+                </div>
+                </a>
+                <a href="https://mail.google.com/chat/u/0/#chat/home" target="_blank">
+                <div class="submenu-item">
+                    <img src="imagenes/chat.png" alt="Chat">
+                    <span>Chat</span>
+                </div>
+                </a>
+                <a href="https://contacts.google.com/" target="_blank">
+                <div class="submenu-item">
+                    <img src="imagenes/contactos.png" alt="Contactos">
+                    <span>Contactos</span>
+                </div>
+            </a>
+                <a href="https://drive.google.com/drive/u/0/home" target="_blank">
+                <div class="submenu-item">
+                    <img src="imagenes/google-drive.png" alt="Drive">
+                    <span>Drive</span>
+                </div>
+            </a>
+            <a href="https://calendar.google.com/calendar/u/0/r" target="_blank">
+                <div class="submenu-item">
+                    <img src="imagenes/calendar-days.png" alt="Calendar">
+                    <span>Calendar</span>
+                </div>
+            </a>
+            </div>
+            <script src="/javaScript/script.js"></script>
+            <!--fin de submenu  -->
+            <ul>
+            <li class =perfil>
+                <a href="">
+                    <img  id="img" src="/imagenes/img1.png" alt="">
+                
+                </a>
+            </li>
+
+        </ul>
+        </nav>
+    </header>
+<!-- MAIN- division  y es el contenido mas importante -->
+    <main>
+        <!-- SECTION- una caja para acomdar elemnetos//LOGO- IGUALA DIV -->
+        <section class="main-logo">
+            <img src="/imagenes/GOOGLEBARBIE.jpg" alt="Logo del buscador Gogle " class="logo1">
+        </section>
+        <!-- SECTION INPUT -->
+        <section class="main-input">
+            <!-- DIVISION //CAJITA REDONDEADA -->
+            <div class="main-input-container"> 
+                <span class="search-icon"></span>
+                <!-- INPUT- RADIO Y CHECKBOX -->
+                <!-- <input type="radio"> -->
+                <input type="text">
+                <a class="micro-icon" href=""></a>
+                <a class="cam-icon" href=""></a>
+            </div>
+        </section>
+        <!-- SECTION BUTTONS -->
+        <section class="main-buttons">
+            <div>
+                <button>Buscar con Google</button>
+            </div>
+            <div>
+                <a href="https://doodles.google/">
+                    <button >Voy a tener suerte</button>
+                </a>
+                
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+    <!--FOOTER--- PIE DE PAGINA  -->
+    <div class="seccion-arriba">
+        <p>México</p>
+    </div>
+    <div class="linea-separadora"></div>
+    <div class="seccion-abajo">
+    
+    <div class="footer-section-left">
+        <ul class="footer-left">
+            <li><a href="https://about.google/?utm_source=google-MX&utm_medium=referral&utm_campaign=hp-footer&fg=1">Sobre Google</a></li>
+            <li><a href="https://www.google.com/intl/es_mx/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Publicidad</a></li>
+            <li><a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Negocios</a></li>
+            <li><a href="https://google.com/search/howsearchworks/?fg=1">Cómo funciona la Búsqueda</a></li>
+        </ul>
+    </div>
+    <div class="footer-section-right">
+        <ul class="footer-right">
+            <li><a href="https://policies.google.com/privacy?hl=es-MX&fg=1">Privacidad</a></li>
+            <li><a href="https://policies.google.com/terms?hl=es-MX&fg=1">Condiciones</a></li>
+            <li><a href="">Preferencias</a></li>
+        </ul>
+    </div>
+    </div>
+</footer>
+
+</body>
+</html>
